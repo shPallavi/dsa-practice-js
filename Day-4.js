@@ -8,9 +8,12 @@
 
 function findPair(arr, target) {
   target = Math.abs(target);
+  // [6, 1, 4, 10, 2, 4]   num=6 , set={}  , target = 2
   const set = new Set();
   for (let num of arr) {
+    console.log(num);
     if (set.has(num + target) || set.has(num - target)) {
+      console.log(set, num, target);
       return true;
     }
     set.add(num);
