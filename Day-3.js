@@ -1,13 +1,9 @@
-// Problem: Valid Anagram
-
+// Problem: Valid Anagram :
 // Write a function called validAnagram that takes two strings as arguments
 // and returns true if the second string is an anagram of the first, and false otherwise.
-
-// An anagram is a word, phrase, or name formed by rearranging the letters
-// of another, using all the original letters exactly once.
+// An anagram is a word, phrase, or name formed by rearranging the letters of another, using all the original letters exactly once.
 
 // Examples:
-
 // validAnagram('', '')                  // true
 // validAnagram('aaz', 'zza')            // false
 // validAnagram('anagram', 'nagaram')    // true
@@ -33,7 +29,6 @@ function validAnagram(str1, str2) {
   }
   return true;
 }
-
 console.log(validAnagram("", ""));
 console.log(validAnagram("aaz", "zza"));
 console.log(validAnagram("anagram", "nagaram"));

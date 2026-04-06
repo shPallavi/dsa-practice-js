@@ -1,7 +1,5 @@
 // 🚀 Day 1 of My DSA Journey
 
-// Today, I solved a problem on Pair with Target Sum using the Two Pointer Technique.
-
 // 🔹 Problem:
 // Given a sorted array, find a pair whose sum equals a target value.
 

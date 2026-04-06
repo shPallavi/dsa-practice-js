@@ -8,12 +8,30 @@
 // countZeroes([1,1,1,1]) // 0
 // Time Complexity - O(n)
 
+// function countZeroes(arr) {
+//   let count = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === 0) count++;
+//   }
+//   return count;
+// }
+
 function countZeroes(arr) {
-  let count = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === 0) count++;
+  let left = 0;
+  let right = arr.length - 1;
+  let firstZeroIndex = -1;
+  while (left <= right) {
+    let mid = Math.floor((left + right) / 2);
+
+    if (arr[mid] === 0) {
+      firstZeroIndex = mid;
+      right = mid - 1;
+    } else {
+      left = mid + 1;
+    }
   }
-  return count;
+  if (firstZeroIndex === -1) return 0;
+  return arr.length - firstZeroIndex;
 }
 
 console.log(countZeroes([1, 1, 1, 1, 0, 0])); // 2
