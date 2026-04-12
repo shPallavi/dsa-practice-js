@@ -29,7 +29,7 @@ function countZeroes(arr) {
     } else {
       left = mid + 1;
     }
-  }
+  }l
   if (firstZeroIndex === -1) return 0;
   return arr.length - firstZeroIndex;
 }

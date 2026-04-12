@@ -9,6 +9,14 @@
 // isPalindrome('amanaplanacanalpanama') // true
 // isPalindrome('amanaplanacanalpandemonium') // false
 
+// Built-In-METHOD
+
+// function isPalindrome(str) {
+//     let reversed = str.split('').reverse().join('');
+//     return str === reversed
+// }
+
+// recursion 
 function isPalindrome(str, left = 0, right = str.length - 1) {
   if (left >= right) return true;
   if (str[left] !== str[right]) return false;
