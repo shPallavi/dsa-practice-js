@@ -22,7 +22,6 @@ function stringifyNumbers(obj) {
 
   for (let key in obj) {
     let value = obj[key];
-
     if (typeof value === "number") {
       newObj[key] = value.toString();
     } else if (
